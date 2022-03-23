@@ -2,7 +2,7 @@
 /**
 *print_line:- print line
 *@n: parameter consisting of the number of line
-*Return: return 0(success)
+*Return: return nothing
 */
 void print_line(int n)
 {
@@ -12,10 +12,12 @@ void print_line(int n)
   }
   else
   
-  {int i;
+  {
+    int i;
     for(i = 1; i < n; i++ )
     {
       _putchar('_');
+      _putchar('\n');
     }
   }
 }
