@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
 *numbers_and_words:- prints numbers and words
 *Return: returns nothing
