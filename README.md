@@ -1,1 +1,1 @@
-This is my readme file for the alx-low_level_programming
+This is my ore pointers arrays and strings project
