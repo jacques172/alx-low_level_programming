@@ -1,23 +1,28 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * print_array - prints n elements in the array a
- * @a: array to print
- * @n: number of elements to print
+ * _atoi - converts a string to an integer
+ * @s: string to convert
  *
- * Return: void
+ * Return: value of integer
  */
-void print_array(int *a, int n)
+int _atoi(char *s)
 {
-	int i = 0;
+	int i, j, n, m;
 
-	while (i < n)
+	i = n = 0;
+	m = 1;
+	while ((*(s + i) < '0' || *(s + i) > '9') && (*(s + i) != '\0'))
 	{
-		printf("%d", a[i]);
-		if (i < (n - 1))
-			printf(", ");
+		if (*(s + i) == '-')
+			m *= -1;
 		i++;
 	}
-	printf("\n");
+	j = i;
+	while ((*(s + j) >= '0') && (*(s + j) <= '9'))
+	{
+		n = n * 10 + m * (*(s + j) - '0');
+		j++;
+	}
+	return (n);
 }
